@@ -41,6 +41,7 @@ cp -f /usr/share/automake/config.sub .
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
+	moduledir=/%{_lib}/security \
 	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
