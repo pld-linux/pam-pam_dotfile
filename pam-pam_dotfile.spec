@@ -3,7 +3,7 @@ Summary:	A PAM module which allows users to have more than one password
 Summary(pl):	Modu³ pozwalaj±cy na posiadanie wiêcej ni¿ jednego has³a
 Name:		pam-%{modulename}
 Version:	0.7
-Release:	1
+Release:	2
 Epoch:		0
 License:	GPL v2
 Vendor:		Lennart Poettering <mz70616d646f7466696c65@itaparica.org>
@@ -13,6 +13,7 @@ Source0:	http://www.stud.uni-hamburg.de/users/lennart/projects/pam_dotfile/%{mod
 URL:		http://www.stud.uni-hamburg.de/users/lennart/projects/%{modulename}/
 BuildRequires:	pam-devel
 BuildRequires:	sed >= 4.0
+BuildRequires:  lynx
 Obsoletes:	%{modulename}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
