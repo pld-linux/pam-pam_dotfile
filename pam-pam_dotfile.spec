@@ -10,11 +10,11 @@ Vendor:		Lennart Poettering <mz70616d646f7466696c65@itaparica.org>
 Group:		Applications/System
 Source0:	http://www.stud.uni-hamburg.de/users/lennart/projects/pam_dotfile/%{modulename}-%{version}.tar.gz
 # Source0-md5:	3c7249f4e6d8a9bd756bb4e09f2ed907
-URL:		http://www.stud.uni-hamburg.de/users/lennart/projects/%{modulename}/
+URL:		http://www.stud.uni-hamburg.de/users/lennart/projects/pam_dotfile/
+BuildRequires:  lynx
 BuildRequires:	pam-devel
 BuildRequires:	sed >= 4.0
-BuildRequires:  lynx
-Obsoletes:	%{modulename}
+Obsoletes:	pam_dotfile
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
