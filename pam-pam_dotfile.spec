@@ -3,7 +3,7 @@ Summary:	A PAM module which allows users to have more than one password
 Summary(pl):	Modu³ pozwalaj±cy na posiadanie wiêcej ni¿ jednego has³a
 Name:		pam-%{modulename}
 Version:	0.7
-Release:	2
+Release:	3
 Epoch:		0
 License:	GPL v2
 Vendor:		Lennart Poettering <mz70616d646f7466696c65@itaparica.org>
@@ -11,8 +11,9 @@ Group:		Applications/System
 Source0:	http://www.stud.uni-hamburg.de/users/lennart/projects/pam_dotfile/%{modulename}-%{version}.tar.gz
 # Source0-md5:	3c7249f4e6d8a9bd756bb4e09f2ed907
 URL:		http://www.stud.uni-hamburg.de/users/lennart/projects/pam_dotfile/
+BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
-BuildRequires:	autoconf
+BuildRequires:	libtool
 BuildRequires:	lynx
 BuildRequires:	pam-devel
 BuildRequires:	sed >= 4.0
@@ -35,10 +36,13 @@ sed -i -e "s#root#$(id -u)#g" src/Makefile*
 sed -i -e "s#/lib/security#/%{_lib}/security#g" configure.ac
 
 %build
-cp -f /usr/share/automake/config.sub .
+%{__libtoolize}
+%{__aclocal}
 %{__autoconf}
-%configure \
-	--enable-shared
+%{__autoheader}
+%{__automake}
+%configure
+
 %{__make}
 
 %install
@@ -46,6 +50,8 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
+
+rm -f $RPM_BUILD_ROOT/%{_lib}/security/*.la
 
 %clean
 rm -rf $RPM_BUILD_ROOT
