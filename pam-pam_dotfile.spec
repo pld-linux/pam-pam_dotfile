@@ -3,6 +3,7 @@ Summary(pl):	Modu³ pozwalaj±cy na posiadanie wiêcej ni¿ jednego has³a
 Name:		pam-pam_dotfile
 Version:	0.7
 Release:	1
+Epoch:		0
 License:	GPL v2
 Vendor:		Lennart Poettering <mz70616d646f7466696c65@itaparica.org>
 Group:		Applications/System
