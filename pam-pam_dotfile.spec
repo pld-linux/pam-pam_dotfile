@@ -32,7 +32,7 @@ serwisów.
 %setup -q -n %{modulename}-%{version}
 
 sed -i -e "s#root#$(id -u)#g" src/Makefile*
-sed -i -e "s#/lib/modules#/%{_lib}/modules#g" configure.ac
+sed -i -e "s#/lib/security#/%{_lib}/security#g" configure.ac
 
 %build
 cp -f /usr/share/automake/config.sub .
