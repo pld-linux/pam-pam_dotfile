@@ -35,6 +35,7 @@ sed -i -e "s#/lib/modules#/%{_lib}/modules#g" configure.ac
 
 %build
 cp -f /usr/share/automake/config.sub .
+%{__autoconf}
 %configure
 %{__make}
 
