@@ -37,7 +37,8 @@ sed -i -e "s#/lib/security#/%{_lib}/security#g" configure.ac
 %build
 cp -f /usr/share/automake/config.sub .
 %{__autoconf}
-%configure
+%configure \
+	--enable-shared
 %{__make}
 
 %install
