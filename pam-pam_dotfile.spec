@@ -12,6 +12,7 @@ Source0:	http://www.stud.uni-hamburg.de/users/lennart/projects/pam_dotfile/%{mod
 # Source0-md5:	3c7249f4e6d8a9bd756bb4e09f2ed907
 URL:		http://www.stud.uni-hamburg.de/users/lennart/projects/pam_dotfile/
 BuildRequires:	automake
+BuildRequires:	autoconf
 BuildRequires:	lynx
 BuildRequires:	pam-devel
 BuildRequires:	sed >= 4.0
