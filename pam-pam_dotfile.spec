@@ -31,6 +31,7 @@ serwisów.
 %setup -q -n %{modulename}-%{version}
 
 sed -i -e "s#root#$(id -u)#g" src/Makefile*
+sed -i -e "s#/lib/modules#/%{_lib}/modules#g" configure.ac
 
 %build
 cp -f /usr/share/automake/config.sub .
@@ -41,7 +42,6 @@ cp -f /usr/share/automake/config.sub .
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
-	moduledir=/%{_lib}/security \
 	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
