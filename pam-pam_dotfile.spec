@@ -47,7 +47,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README
-%attr(755,root,root) /lib/security/pam_dotfile.so
+%attr(755,root,root) /%{_lib}/security/pam_dotfile.so
 %attr(755,root,root) %{_bindir}/pam*
 %attr(4755,root,root) %{_sbindir}/pam*
 %{_mandir}/man?/*
