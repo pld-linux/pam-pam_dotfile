@@ -6,11 +6,10 @@ Version:	0.7
 Release:	3
 Epoch:		0
 License:	GPL v2
-Vendor:		Lennart Poettering <mz70616d646f7466696c65@itaparica.org>
 Group:		Applications/System
 Source0:	http://www.stud.uni-hamburg.de/users/lennart/projects/pam_dotfile/%{modulename}-%{version}.tar.gz
 # Source0-md5:	3c7249f4e6d8a9bd756bb4e09f2ed907
-URL:		http://www.stud.uni-hamburg.de/users/lennart/projects/pam_dotfile/
+URL:		http://0pointer.net/lennart/projects/pam_dotfile/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
 BuildRequires:	libtool
