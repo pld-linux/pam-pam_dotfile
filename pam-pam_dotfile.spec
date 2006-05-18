@@ -7,7 +7,7 @@ Release:	3
 Epoch:		0
 License:	GPL v2
 Group:		Applications/System
-Source0:	http://www.stud.uni-hamburg.de/users/lennart/projects/pam_dotfile/%{modulename}-%{version}.tar.gz
+Source0:	http://0pointer.de/lennart/projects/pam_dotfile/%{modulename}-%{version}.tar.gz
 # Source0-md5:	3c7249f4e6d8a9bd756bb4e09f2ed907
 URL:		http://0pointer.net/lennart/projects/pam_dotfile/
 BuildRequires:	autoconf >= 2.57
