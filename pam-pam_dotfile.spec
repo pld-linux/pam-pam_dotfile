@@ -1,6 +1,6 @@
 %define 	modulename pam_dotfile
 Summary:	A PAM module which allows users to have more than one password
-Summary(pl):	Modu³ pozwalaj±cy na posiadanie wiêcej ni¿ jednego has³a
+Summary(pl.UTF-8):   ModuÅ‚ pozwalajÄ…cy na posiadanie wiÄ™cej niÅ¼ jednego hasÅ‚a
 Name:		pam-%{modulename}
 Version:	0.7
 Release:	3
@@ -23,10 +23,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 pam_dotfile is a PAM module which allows users to have more than one
 password for a single account, each for a different service.
 
-%description -l pl
-pam_dotfile jest modu³em PAM pozwalaj±cym u¿ytkownikom na posiadanie
-wiêcej ni¿ jednego has³a do jednego konta, ró¿ne has³a do ró¿nych
-serwisów.
+%description -l pl.UTF-8
+pam_dotfile jest moduÅ‚em PAM pozwalajÄ…cym uÅ¼ytkownikom na posiadanie
+wiÄ™cej niÅ¼ jednego hasÅ‚a do jednego konta, rÃ³Å¼ne hasÅ‚a do rÃ³Å¼nych
+serwisÃ³w.
 
 %prep
 %setup -q -n %{modulename}-%{version}
