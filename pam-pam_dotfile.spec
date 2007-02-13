@@ -1,6 +1,6 @@
 %define 	modulename pam_dotfile
 Summary:	A PAM module which allows users to have more than one password
-Summary(pl.UTF-8):   Moduł pozwalający na posiadanie więcej niż jednego hasła
+Summary(pl.UTF-8):	Moduł pozwalający na posiadanie więcej niż jednego hasła
 Name:		pam-%{modulename}
 Version:	0.7
 Release:	3
